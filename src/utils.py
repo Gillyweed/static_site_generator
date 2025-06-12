@@ -11,6 +11,15 @@ class BlockType(Enum):
     UNORDERED_LIST = "UNORDERED_LIST"
     ORDERED_LIST = "ORDERED_LIST"
 
+def markdown_to_html_node(md):
+    # split mk into blocks
+    # loop over each block
+        # determine type of block
+        # create appropriate HTMLNode
+        # assign the proper child HTMLNodes to the block node (need to write fn)
+        # 'code' blocks are a special case
+    # make all the block nodes children under an HTMLNode (div) and return it
+
 def block_to_block_type(md):
     #md is a single block of markdown text
     # it is assumed to have no leading/trailing whitespace
